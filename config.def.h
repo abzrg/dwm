@@ -123,7 +123,7 @@ static const Key keys[] = {
 	//{ MODKEY,                       XK_F12,                   spawn, SHCMD("xbacklight -inc 10 ; pkill -RTMIN+4 dwmblocks") },
 
 	// Toggle keyboard layout
-	{ 0,                            XK_Scroll_Lock,            spawn, SHCMD("toggle_keyboard_layout.sh") },
+	{ 0,                            XK_Scroll_Lock,            spawn, SHCMD("toggle_keyboard_layout.sh; pkill -RTMIN+2 dwmblocks") },
 
 	// Dictionary
 	{ ALT|ControlMask,              XK_d,                      spawn, SHCMD("define.sh") },

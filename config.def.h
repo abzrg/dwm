@@ -121,6 +121,8 @@ static const Key keys[] = {
 	//{ MODKEY,                       XK_F11,                   spawn, SHCMD("xbacklight -dec 10 ; pkill -RTMIN+4 dwmblocks") },
 	//{ MODKEY,                       XK_F12,                   spawn, SHCMD("xbacklight -inc 10 ; pkill -RTMIN+4 dwmblocks") },
 
+	// Toggle keyboard layout
+	{ 0,                            XK_Scroll_Lock,            spawn, SHCMD("toggle_keyboard_layout.sh") },
 };
 
 /* button definitions */

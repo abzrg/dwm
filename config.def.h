@@ -32,9 +32,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     iscentered   isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            0,           1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           0,           -1 },
+	/* class          instance    title       tags mask     iscentered   isfloating   monitor */
+	{ "Gimp",         NULL,       NULL,       0,            0,           1,           -1 },
+	{ "Firefox",      NULL,       NULL,       1 << 8,       0,           0,           -1 },
+	{ "Dicitionary",  NULL,       NULL,       0,            1,           1,           -1 },
 };
 
 /* layout(s) */
@@ -123,6 +124,9 @@ static const Key keys[] = {
 
 	// Toggle keyboard layout
 	{ 0,                            XK_Scroll_Lock,            spawn, SHCMD("toggle_keyboard_layout.sh") },
+
+	// Dictionary
+	{ ALT|ControlMask,              XK_d,                      spawn, SHCMD("define.sh") },
 };
 
 /* button definitions */

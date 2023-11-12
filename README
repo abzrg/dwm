@@ -53,6 +53,7 @@ Patches
 - actualfullscreen
 - bidi
 - center
+- movestack
 - noborder
 - pertag
 - systray
